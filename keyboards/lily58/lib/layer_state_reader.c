@@ -6,6 +6,7 @@
 #define L_RAISE (1 << 2)
 #define L_ADJUST (1 << 3)
 #define L_ADJUST_TRI (L_ADJUST | L_RAISE | L_LOWER)
+#define L_BASE2 20
 
 char layer_state_str[24];
 
@@ -24,6 +25,9 @@ const char *read_layer_state(void) {
   case L_ADJUST:
   case L_ADJUST_TRI:
     snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Adjust");
+    break;
+  case L_BASE2:
+    snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Default");
     break;
   default:
     snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Undef-%u", layer_state);
