@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      |LG(W) |      |LG(@) |      |                    | Home |   {  |   }  | F13  | F11  |      |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |LShift|      | LGUI | LAlt |      |-------.    ,-------| Left | Down |  UP  |Right | F12  |RG(S) |
+ * |      |      |LShift| LGUI | LAlt |      |-------.    ,-------| Left | Down |  UP  |Right | F12  |RG(S) |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |      |      |      |LG(C) |LG(V) |      |-------|    |-------| End  |   [  |   ]  | CF16 |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT(
   KC_PSCR, KC_F1  , KC_F2     , KC_F3     , KC_F4      , KC_F5  ,                   KC_F6  , KC_F7  , KC_F8  , KC_F9       , KC_F10 , _______,
   _______, _______, LGUI(KC_W), _______   , LGUI(KC_AT), _______,                   KC_HOME, KC_LCBR, KC_RCBR, KC_F13      , KC_F11 , _______,
-  _______, KC_LSFT, _______   , KC_LGUI   , KC_LALT    , _______,                   KC_LEFT, KC_DOWN, KC_UP  , KC_RIGHT    , KC_F12 , RGUI(KC_S),
+  _______, _______, KC_LSFT   , KC_LGUI   , KC_LALT    , _______,                   KC_LEFT, KC_DOWN, KC_UP  , KC_RIGHT    , KC_F12 , RGUI(KC_S),
   _______, _______, _______   , LGUI(KC_C), LGUI(KC_V) , _______, _______, _______, KC_END , KC_LBRC, KC_RBRC, LCTL(KC_F16), _______, _______,
                                    _______,     _______, _______, _______, _______, _______, _______, _______\
 ),
