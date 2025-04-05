@@ -70,10 +70,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                   `----------------------------'           '------''--------------------'
  */
 [_RAISE] = LAYOUT(
-  KC_PSCR,      KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,         KC_F8,         KC_F9,       KC_F10,                _______,
-  LALT(KC_TAB), _______, KC_TILD, KC_LPRN, KC_RPRN, KC_GRV,                    _______, KC_LCBR,       KC_RCBR,       KC_F17,      _______,               _______,
-  _______,      _______, _______, KC_EQL,  KC_DQT,  KC_QUOT,                   _______, LCTL(KC_PGDN), LCTL(KC_PGUP), KC_F16,      LM(_QWERTY2,MOD_LCTL), _______,
-  _______,      KC_BSLS, KC_PIPE, KC_PLUS, KC_MINS, KC_UNDS, _______, _______, _______, KC_LBRC,       KC_RBRC,       KC_INS,      _______,               _______,
+  KC_PSCR,      KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,         KC_F8,         KC_F9,  KC_F10,                _______,
+  LALT(KC_TAB), _______, KC_TILD, KC_LPRN, KC_RPRN, KC_GRV,                    _______, KC_LCBR,       KC_RCBR,       KC_F17, _______,               _______,
+  _______,      _______, _______, KC_EQL,  KC_DQT,  KC_QUOT,                   _______, LCTL(KC_PGDN), LCTL(KC_PGUP), KC_F16, LM(_QWERTY2,MOD_LCTL), _______,
+  _______,      KC_BSLS, KC_PIPE, KC_PLUS, KC_MINS, KC_UNDS, _______, _______, _______, LALT(KC_F16),  RSA(KC_F16),   KC_INS, _______,               _______,
                                   _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
