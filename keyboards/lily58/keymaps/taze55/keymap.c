@@ -41,18 +41,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |SSClip|LShift| LGUI | LAlt |CtPgDn|-------.    ,-------| Left | Down |  UP  |Right | F12  |RG(S) |
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
- * |      |SSFile|LG(X) |LG(C) |LG(V) |      |-------|    |-------| End  |   [  |   ]  |SAINS | CINS |      |
+ * |      |SSFile|LG(X) |LG(C) |SAG(V)|      |-------|    |-------| End  |   [  |   ]  |SAINS | CINS |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \      \  |      |      |      |    ※CSINSも兼ねる(VSCodeなどで)
  *                   |      |      |      |/       /         \      \ |      |      |      |
  *                   `----------------------------'           '------''--------------------'
  */
 [_LOWER] = LAYOUT(
-  _______, KC_F1        , KC_F2     , KC_F3     , KC_F4      , KC_F5        ,                   KC_F6  , KC_F7  , KC_F8  , KC_F9       , KC_F10,       _______   ,
-  _______, G(C(KC_Q))   , LGUI(KC_W), _______   , LGUI(KC_AT), LCTL(KC_PGUP),                   KC_HOME, KC_LCBR, KC_RCBR, LALT(KC_INS), KC_F11,       _______   ,
-  _______, G(C(S(KC_4))), KC_LSFT   , KC_LGUI   , KC_LALT    , LCTL(KC_PGDN),                   KC_LEFT, KC_DOWN, KC_UP  , KC_RIGHT    , KC_F12,       RGUI(KC_S),
-  _______, G(S(KC_4))   , LGUI(KC_X), LGUI(KC_C), LGUI(KC_V) , _______      , _______, _______, KC_END , KC_LBRC, KC_RBRC, RSA(KC_INS) , RCTL(KC_INS), _______   ,
-                                      _______   , _______    , _______      , _______, _______, _______, _______, _______
+  _______, KC_F1        , KC_F2     , KC_F3     , KC_F4          , KC_F5        ,                   KC_F6  , KC_F7  , KC_F8  , KC_F9       , KC_F10,       _______   ,
+  _______, G(C(KC_Q))   , LGUI(KC_W), _______   , LGUI(KC_AT)    , LCTL(KC_PGUP),                   KC_HOME, KC_LCBR, KC_RCBR, LALT(KC_INS), KC_F11,       _______   ,
+  _______, G(C(S(KC_4))), KC_LSFT   , KC_LGUI   , KC_LALT        , LCTL(KC_PGDN),                   KC_LEFT, KC_DOWN, KC_UP  , KC_RIGHT    , KC_F12,       RGUI(KC_S),
+  _______, G(S(KC_4))   , LGUI(KC_X), LGUI(KC_C), LSA(LGUI(KC_V)), _______      , _______, _______, KC_END , KC_LBRC, KC_RBRC, RSA(KC_INS) , RCTL(KC_INS), _______   ,
+                                      _______   , _______        , _______      , _______, _______, _______, _______, _______
 ),
 
 /* RAISE
